@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/grupo")
-public class GrupoControlador {
+public class ControladorGrupo{
 
     @Autowired
     private GrupoServicio servicio;
