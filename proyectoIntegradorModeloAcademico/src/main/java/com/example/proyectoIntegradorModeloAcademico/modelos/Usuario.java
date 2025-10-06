@@ -1,8 +1,7 @@
-package com.example.proyectoIntegradorModeloAcademico.modelos.mapas;
+package com.example.proyectoIntegradorModeloAcademico.modelos;
 
 import com.example.proyectoIntegradorModeloAcademico.ayudas.EstadoUsuario;
 import com.example.proyectoIntegradorModeloAcademico.ayudas.RolesUsuarios;
-import com.example.proyectoIntegradorModeloAcademico.modelos.Estudiante;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 

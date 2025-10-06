@@ -24,11 +24,6 @@ public class Nota {
     @Column(name = "fecha", nullable = false, length = 20)
     private LocalDate fecha;
 
-    @Column(name = "estudiante_id", nullable = false, unique = true)
-    private Integer estudiante_id;
-
-    @Column(name = "materia_id", nullable = false, unique = true)
-    private Integer materia_id;
 
     @ManyToOne
     @JoinColumn(name = "fk_estudiante", referencedColumnName = "id")
@@ -43,13 +38,11 @@ public class Nota {
     public Nota() {
     }
 
-    public Nota(Integer id, Double valor, TipoEvaluacion tipoEvaluacion, LocalDate fecha, Integer estudiante_id, Integer materia_id) {
+    public Nota(Integer id, Double valor, TipoEvaluacion tipoEvaluacion, LocalDate fecha) {
         this.id = id;
         this.valor = valor;
         this.tipoEvaluacion = tipoEvaluacion;
         this.fecha = fecha;
-        this.estudiante_id = estudiante_id;
-        this.materia_id = materia_id;
     }
 
     public Integer getId() {
@@ -84,19 +77,4 @@ public class Nota {
         this.fecha = fecha;
     }
 
-    public Integer getEstudiante_id() {
-        return estudiante_id;
-    }
-
-    public void setEstudiante_id(Integer estudiante_id) {
-        this.estudiante_id = estudiante_id;
-    }
-
-    public Integer getMateria_id() {
-        return materia_id;
-    }
-
-    public void setMateria_id(Integer materia_id) {
-        this.materia_id = materia_id;
-    }
 }

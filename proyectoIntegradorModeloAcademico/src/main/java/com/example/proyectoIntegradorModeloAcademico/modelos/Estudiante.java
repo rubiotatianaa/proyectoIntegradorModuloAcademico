@@ -1,6 +1,5 @@
 package com.example.proyectoIntegradorModeloAcademico.modelos;
 
-import com.example.proyectoIntegradorModeloAcademico.modelos.mapas.Usuario;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
