@@ -1,40 +1,17 @@
-package com.example.proyectoIntegradorModeloAcademico.modelos;
+package com.example.proyectoIntegradorModeloAcademico.modelos.dtos;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "Grupo")
-public class Grupo {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(name = "nombre", nullable = false)
+public class DTOGrupo {
     private String nombre;
-
-    @Column(name = "materia", nullable = false)
     private String materia;
-
-    @Column(name = "semestre", nullable = false)
     private Integer semestre;
 
-    public Grupo() {
+    public DTOGrupo() {
     }
 
-    public Grupo(String nombre, String materia, Integer semestre) {
+    public DTOGrupo(String nombre, String materia, Integer semestre) {
         this.nombre = nombre;
         this.materia = materia;
         this.semestre = semestre;
-    }
-
-    // Getters y Setters
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getNombre() {
