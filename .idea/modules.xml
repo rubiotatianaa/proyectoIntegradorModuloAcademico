@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/proyectoIntegradorModeloAcademico.iml" filepath="$PROJECT_DIR$/.idea/proyectoIntegradorModeloAcademico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proyectoIntegradorModeloAcademico/proyectoIntegradorModeloAcademico.iml" filepath="$PROJECT_DIR$/proyectoIntegradorModeloAcademico/proyectoIntegradorModeloAcademico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/proyectoIntegradorModuloAcademico.iml" filepath="$PROJECT_DIR$/.idea/proyectoIntegradorModuloAcademico.iml" />
     </modules>
   </component>
 </project>
